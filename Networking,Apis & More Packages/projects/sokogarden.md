@@ -27,8 +27,20 @@ flutter create sokogarden
 \lib\main.dart
 ```
 ## Prerequisites
-We will be fetching data from the parent system via apis.
+We will be fetching data from the parent system via apis. Your pubspec.yaml file should be depending on atleast these packages
 
+
+```yaml
+  flex_color_scheme: ^7.3.1
+  http: ^1.2.1
+  intl: ^0.19.0
+
+```
+here is how to add them from the terminal
+```sh
+flutter pub add intl
+flutter pub add http
+```
 ## products
 ```dart
 import 'dart:convert';
