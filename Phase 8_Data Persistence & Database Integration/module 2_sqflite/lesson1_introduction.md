@@ -13,8 +13,8 @@ To use sqflite in a Flutter app, add the `sqflite` and `path` packages to your `
 
 ```yaml
 dependencies:
-  sqflite: ^2.0.0
-  path: ^1.8.0
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
 ```
 
 Then, run `flutter pub get` to install the packages.
