@@ -1,4 +1,3 @@
-
 # Module 1: Firebase Console
 
 ## Lesson 3: Navigating Firebase Console
@@ -15,8 +14,10 @@
 
 ### Key Features and Tools Available in the Firebase Console
 
-- **Authentication**: Set up various authentication providers (email/password, Google, Facebook, etc.).
-- **Firestore Database**: Create, read, update, and delete data.
-- **Storage**: Upload and manage files.
-- **Functions**: Write and deploy server-side code.
-- **Analytics**: Monitor user engagement and behavior.
+| **Feature**            | **Description**                                      |
+|------------------------|------------------------------------------------------|
+| **Authentication**    | Set up various authentication providers (email/password, Google, Facebook, etc.). |
+| **Firestore Database** | Create, read, update, and delete data.              |
+| **Storage**            | Upload and manage files.                            |
+| **Functions**          | Write and deploy server-side code.                  |
+| **Analytics**          | Monitor user engagement and behavior.               |

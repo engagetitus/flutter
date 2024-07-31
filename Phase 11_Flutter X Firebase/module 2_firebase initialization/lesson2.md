@@ -28,18 +28,23 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Ensuring Proper Firebase Setup in main.dart
-Ensure that Firebase initialization is completed before running the app:
+```
 
-dart
-Copy code
+- Ensuring Proper Firebase Setup in `main.dart`
+- Ensure that Firebase initialization is completed before running the app:
+
+```dart
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
 }
-Testing Firebase Initialization
+```
+
+### Testing Firebase Initialization
+
 Run the app and check the console for any initialization errors. Verify Firebase is initialized correctly:
 
-Android: Check Logcat for any errors.
-iOS: Check Xcode console for errors.
+**Android**: Check Logcat for any errors.
+**iOS**: Check Xcode console for errors.

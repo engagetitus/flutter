@@ -17,6 +17,8 @@ Firebase is a platform developed by Google for creating mobile and web applicati
 
 Firebase provides backend services, easy-to-use SDKs, and ready-made UI libraries to help build and release apps quickly. It helps in:
 
-- **Rapid Development**: Speeds up the development process.
-- **Scalability**: Scales automatically with the growth of your app.
-- **Security**: Ensures data security with robust security rules.
+| **Benefit**            | **Description**                                       |
+|------------------------|-------------------------------------------------------|
+| **Rapid Development** | Speeds up the development process with pre-built services and SDKs. |
+| **Scalability**        | Scales automatically with the growth of your app.    |
+| **Security**           | Ensures data security with robust security rules.    |
