@@ -2,19 +2,19 @@
 
 1. Add `firebase_storage` to your `pubspec.yaml` file.
 
-```yaml
-dependencies:
-  firebase_storage: ^10.2.7
-```
+    ```yaml
+    dependencies:
+      firebase_storage: ^10.2.7
+    ```
 
 2. Run `flutter pub get` to install the package.
 3. Initialize Firebase Storage in your Flutter app.
 
-```dart
-import 'package:firebase_storage/firebase_storage.dart';
+    ```dart
+    import 'package:firebase_storage/firebase_storage.dart';
 
-FirebaseStorage storage = FirebaseStorage.instance;
-```
+    FirebaseStorage storage = FirebaseStorage.instance;
+    ```
 
 4. Upload a file to Firebase Storage.
 
@@ -29,6 +29,7 @@ Future<void> uploadFile(File file, String filePath) async {
 ```
 
 ## File Download
+
 ```dart
 Future<File> downloadFile(String filePath, File localFile) async {
   try {
@@ -42,6 +43,7 @@ Future<File> downloadFile(String filePath, File localFile) async {
 ```
 
 ## Managing Files
+
 ```dart
 Future<void> deleteFile(String filePath) async {
   try {
@@ -51,4 +53,3 @@ Future<void> deleteFile(String filePath) async {
   }
 }
 ```
-

@@ -1,9 +1,11 @@
-# Session 1: Introduction to Firebase 
+# Session 1: Introduction to Firebase
 
 ## Overview of Firebase
+
 Firebase is a platform developed by Google for creating mobile and web applications. It provides a suite of cloud services to help you build, improve, and grow your app.
 
 ## Firebase Console Setup
+
 1. Go to the [Firebase Console](https://console.firebase.google.com/).
 2. Click on "Add Project" and follow the setup instructions.
 3. Register your app (iOS/Android) and download the `google-services.json` or `GoogleService-Info.plist` file.
@@ -12,6 +14,7 @@ Firebase is a platform developed by Google for creating mobile and web applicati
 ## Firebase Authentication
 
 ### Email/Password Authentication
+
 ```dart
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -25,6 +28,7 @@ Future<UserCredential> signUpWithEmailPassword(String email, String password) as
 ```
 
 ### Third-party Authentication (Google)
+
 ```dart
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
