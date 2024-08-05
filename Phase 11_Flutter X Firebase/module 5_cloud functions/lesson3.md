@@ -3,6 +3,8 @@
 
 ## Lesson 3: Firestore Triggers
 
+Learn how to trigger Cloud Functions through various Firebase events and direct HTTP calls.
+
 ### Writing Firestore Trigger Functions
 
 ```javascript
