@@ -5,7 +5,6 @@
   Soko Garden is an Ecommerce system. Done by Flask.
   Basically allows users to login and order products
 
-
   vendors post products.
   To reinforce your learn on Http requests and Asynchronous programming; we will be building a mobile client for the same.
 
