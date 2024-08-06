@@ -1,33 +1,32 @@
 
----
-
-### Module 5: Bloc
-
-#### Lesson 1: Introduction to Bloc
-
-
 # Module 5: Bloc
 
 ## Lesson 1: Introduction to Bloc
 
 ### What is Bloc?
+
 Bloc (Business Logic Component) is a state management library that helps to separate business logic from UI. It makes it easier to test, reuse, and maintain the code by following the principles of the BLoC pattern.
 
 ### Benefits of Using Bloc
+
 - Clear separation of business logic and UI
 - Easy to test and maintain
 - Built-in support for streams
 - Well-defined state transitions
 
 ### Setting Up Bloc
+
 Add the bloc and flutter_bloc dependencies to your `pubspec.yaml` file:
+
 ```yaml
 dependencies:
   bloc: ^8.0.0
   flutter_bloc: ^8.0.0
 ```
-Basic Example
-dart
+
+### Basic Example
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -91,8 +90,11 @@ class CounterPage extends StatelessWidget {
     );
   }
 }
-Practical Example: Shopping Cart
-dart
+```
+
+### Practical Example: Shopping Cart
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -217,3 +219,4 @@ class CartTotal extends StatelessWidget {
     );
   }
 }
+```

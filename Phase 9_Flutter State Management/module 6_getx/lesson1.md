@@ -1,32 +1,31 @@
 
----
-
-### Module 6: GetX
-
-#### Lesson 1: Introduction to GetX
-
-
 # Module 6: GetX
 
 ## Lesson 1: Introduction to GetX
 
 ### What is GetX?
+
 GetX is an extra-light and powerful state management solution for Flutter. It provides high-performance state management, intelligent dependency injection, and route management.
 
 ### Benefits of Using GetX
+
 - High performance and low memory consumption
 - Easy and powerful dependency management
 - Simplified routing and navigation
 - Reactive programming support
 
 ### Setting Up GetX
+
 Add the get dependency to your `pubspec.yaml` file:
+
 ```yaml
 dependencies:
   get: ^4.0.0
 ```
-Basic Example
-dart
+
+### Basic Example
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -87,8 +86,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Practical Example: Shopping Cart
-dart
+```
+
+### Practical Example: Shopping Cart
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -180,5 +182,5 @@ class CartTotal extends StatelessWidget {
         return Text('Total: \$${Get.find<CartController>().total}', style: TextStyle(fontSize: 24));
       }),
     );
-  }
+  }```
 }

@@ -1,40 +1,41 @@
 
----
-
-### Module 7: MobX
-
-#### Lesson 1: Introduction to MobX
-
-
 # Module 7: MobX
 
 ## Lesson 1: Introduction to MobX
 
 ### What is MobX?
+
 MobX is a state management library that makes state observable and reacts to changes automatically. It integrates well with Flutter and simplifies the state management process.
 
 ### Benefits of Using MobX
+
 - Simple and intuitive state management
 - Automatic reactions to state changes
 - Supports complex state management scenarios
 - Easy integration with Flutter
 
 ### Setting Up MobX
+
 Add the mobx and flutter_mobx dependencies to your `pubspec.yaml` file:
+
 ```yaml
 dependencies:
   mobx: ^2.0.0
   flutter_mobx: ^2.0.0
 ```
+
 Also, add the mobx_codegen and build_runner dependencies for code generation:
 
-yaml
+```yaml
 
 dev_dependencies:
   mobx_codegen: ^2.0.0
   build_runner: ^2.0.0
-Basic Example
-dart
+```
+
+### Basic Example
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -44,7 +45,7 @@ import 'package:mobx/mobx.dart';
 part 'counter.g.dart';
 
 // This is the class used by rest of your codebase
-class Counter = _Counter with _$Counter;
+class Counter = _Counter with_$Counter;
 
 // The store-class
 abstract class _Counter with Store {
@@ -85,8 +86,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Practical Example: Shopping Cart
-dart
+```
+
+### Practical Example: Shopping Cart
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -104,7 +108,7 @@ class Product {
 }
 
 // Cart Store
-class Cart = _Cart with _$Cart;
+class Cart = _Cart with_$Cart;
 
 abstract class _Cart with Store {
   @observable
@@ -205,3 +209,4 @@ class CartTotal extends StatelessWidget {
     );
   }
 }
+```

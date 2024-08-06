@@ -1,31 +1,30 @@
 
----
-
-### Module 2: Provider for State Management
-
-#### Lesson 1: Introduction to Provider
-
-
 # Module 2: Provider for State Management
 
 ## Lesson 1: Introduction to Provider
 
 ### What is Provider?
+
 Provider is a Flutter library used for state management. It allows you to manage and propagate state efficiently and cleanly through your Flutter app.
 
 ### Benefits of Using Provider
+
 - Simplifies state management
 - Improves code readability and maintainability
 - Easily integrates with Flutter’s widget tree
 
 ### Setting Up Provider
+
 Add the provider dependency to your `pubspec.yaml` file:
+
 ```yaml
 dependencies:
   provider: ^6.0.0
 ```
-Basic Example
-dart
+
+### Basic Example
+
+``` dart
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -41,7 +40,7 @@ void main() {
 
 class Counter with ChangeNotifier {
   int _count = 0;
-  int get count => _count;
+  int get count =>_count;
 
   void increment() {
     _count++;
@@ -72,8 +71,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Practical Example: Shopping Cart
-dart
+```
+
+## Practical Example: Shopping Cart
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -101,6 +103,9 @@ class Cart with ChangeNotifier {
     return _items.fold(0, (sum, item) => sum + item.price);
   }
 }
+```
+
+```dart
 
 void main() {
   runApp(
@@ -170,3 +175,4 @@ class CartTotal extends StatelessWidget {
     );
   }
 }
+```

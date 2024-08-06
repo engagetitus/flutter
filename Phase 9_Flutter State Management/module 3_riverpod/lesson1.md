@@ -1,32 +1,29 @@
 
----
+# Lesson 1: Introduction to Riverpod
 
-### Module 3: Riverpod
+# What is Riverpod?
 
-#### Lesson 1: Introduction to Riverpod
-
-
-# Module 3: Riverpod
-
-## Lesson 1: Introduction to Riverpod
-
-### What is Riverpod?
 Riverpod is a state management solution for Flutter applications that provides a more powerful and flexible way to manage state compared to Provider. It offers compile-time safety, a simpler syntax, and enhanced debugging capabilities.
 
-### Benefits of Using Riverpod
+## Benefits of Using Riverpod
+
 - Type safety
 - Easily testable
 - Improved code readability
 - No need for BuildContext
 
 ### Setting Up Riverpod
+
 Add the riverpod dependency to your `pubspec.yaml` file:
+
 ```yaml
 dependencies:
   flutter_riverpod: ^1.0.0
 ```
-Basic Example
-dart
+
+### Basic Example
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -59,8 +56,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Practical Example: Shopping Cart
-dart
+```
+
+### Practical Example: Shopping Cart
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -152,3 +152,4 @@ class CartTotal extends ConsumerWidget {
     );
   }
 }
+```

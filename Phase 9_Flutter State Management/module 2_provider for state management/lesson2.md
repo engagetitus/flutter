@@ -1,13 +1,9 @@
+# Lesson 2: Advanced Provider Usage
 
-#### Lesson 2: Advanced Provider Usage
+## MultiProvider
 
-
-# Module 2: Provider for State Management
-
-## Lesson 2: Advanced Provider Usage
-
-### MultiProvider
 Using `MultiProvider` to provide multiple providers at once:
+
 ```dart
 void main() {
   runApp(
@@ -20,11 +16,13 @@ void main() {
     ),
   );
 }
+```
 
-ProxyProvider
+## ProxyProvider
+
 Creating a provider that depends on other providers:
 
-dart
+```dart
 
 void main() {
   runApp(
@@ -39,10 +37,13 @@ void main() {
     ),
   );
 }
-Selector
+```
+
+## Selector
+
 Optimizing the Consumer widget using Selector:
 
-dart
+```dart
 
 class MyApp extends StatelessWidget {
   @override
@@ -62,8 +63,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Practical Example: Enhanced Shopping Cart
-dart
+```
+
+## Practical Example: Enhanced Shopping Cart
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -171,3 +175,4 @@ class CartTotal extends StatelessWidget {
     );
   }
 }
+```

@@ -1,32 +1,32 @@
 
----
-
-### Module 4: Redux
-
-#### Lesson 1: Introduction to Redux
-
-
 # Module 4: Redux
 
 ## Lesson 1: Introduction to Redux
 
 ### What is Redux?
+
 Redux is a predictable state container for JavaScript apps, but it can also be used with Dart and Flutter. It helps you write applications that behave consistently, run in different environments, and are easy to test.
 
 ### Benefits of Using Redux
+
 - Predictable state updates
 - Centralized state management
 - Middleware support for asynchronous logic
 - Time-travel debugging
 
 ### Setting Up Redux
+
 Add the redux and flutter_redux dependencies to your `pubspec.yaml` file:
+
 ```yaml
 dependencies:
   redux: ^4.0.0
   flutter_redux: ^0.8.0
-Basic Example
-dart
+```
+
+### Basic Example
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
@@ -84,8 +84,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Practical Example: Shopping Cart
-dart
+```
+
+### Practical Example: Shopping Cart
+
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
@@ -212,3 +215,4 @@ class CartTotal extends StatelessWidget {
     );
   }
 }
+```
