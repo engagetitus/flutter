@@ -1,18 +1,22 @@
 # Project 1 - SOKO Garden
 
 ## Background
-soko Garden is an Ecommerce system. Done by Flask.
-Basically allows users to login and order products.
----
-vendors post products.
-To reinforce your learn on Http requests and Asynchronous programming; we will be building a mobile client for the same.
+
+  Soko Garden is an Ecommerce system. Done by Flask.
+  Basically allows users to login and order products
+
+
+  vendors post products.
+  To reinforce your learn on Http requests and Asynchronous programming; we will be building a mobile client for the same.
 
 ## step 1 : create Flutter project
+
 ```sh
 flutter create sokogarden
 ```
 
 ## Step 2 : Layout Project
+
 ```sh
 \lib
 \lib\api\product.dart
@@ -26,9 +30,10 @@ flutter create sokogarden
 \lib\screens\single_product.dart
 \lib\main.dart
 ```
-## Prerequisites
-We will be fetching data from the parent system via apis. Your pubspec.yaml file should be depending on atleast these packages
 
+## Prerequisites
+
+We will be fetching data from the parent system via apis. Your pubspec.yaml file should be depending on atleast these packages
 
 ```yaml
   flex_color_scheme: ^7.3.1
@@ -36,12 +41,16 @@ We will be fetching data from the parent system via apis. Your pubspec.yaml file
   intl: ^0.19.0
 
 ```
+
 here is how to add them from the terminal
+
 ```sh
 flutter pub add intl
 flutter pub add http
 ```
+
 ## products
+
 ```dart
 import 'dart:convert';
 
@@ -119,6 +128,7 @@ Future createProduct(Map product) async {
 ```
 
 ### TASK : Users
+
 ```dart
 
 // Create Users
@@ -139,7 +149,8 @@ Future createProduct(Map product) async {
 
 ```
 
-### payments 
+### payments
+
 ``` dart
 import 'dart:convert';
 
@@ -165,6 +176,7 @@ Future mpesa(double amount, String phone) async {
 ## User Interface
 
 ### \main.dart
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
@@ -181,6 +193,7 @@ void main() {
   ));
 }
 ```
+
 ### \auth\login
 
 ``` dart
@@ -293,6 +306,7 @@ class _ProductsState extends State<Products> {
 ```
 
 ### \screens\single_product
+
 ``` dart
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -355,7 +369,9 @@ class _OneproductState extends State<Oneproduct> {
   }
 }
 ```
+
 ### \screens\mpesa
+
 ``` dart
 import 'dart:convert';
 import 'package:flutter/material.dart';
